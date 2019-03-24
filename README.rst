@@ -1,34 +1,57 @@
-Conway's Game of Life
----------------------
+Conway’s Game of Life
+=====================
 
-Implementation of Conway's Game of Life for 2019 GSoC application for
+Implementation of Conway’s Game of Life for 2019 GSoC application for
 JDE Robots.
 
 Installation Instruction
 ------------------------
 
-``# make virutal Environment``
+1. Create and activate a new virtual environment
+2. Install the package
 
-``pip3 install .``
+::
 
+   pip3 install .
 
-To run test programs
-----------------------
-``python3 setup.py test``
+To run tests
+------------
 
-To use as package in file
--------------------
-``python3``
+To run the tests execute
 
-``>>from jdegol import gol``
+::
 
-``>> gol(init_type="random",h=20,w=20)``
-    
+   python3 setup.py test
 
+Using jdegol as a package
+-------------------------
 
-The parameters of the gol function are *init_type,json_path,h,w.*
+::
 
-- init_type="random" to take initially random values
-- init_type="json" json_path="" to parse the json file as an input
-- h corresponds to the height of the grid
-- w corresponds to the width of the grid
+   >> from jdegol import gol
+   >> gol(init_type="random",h=20,w=20) # for a random grid
+   >> gol(init_type="json", json_path="path/to/a/json/file.json") # for grid from a json file
+
+API
+---
+
+**gol(init_type=“random”, json_path=None, h=None, w=None, debug=None)**
+
+Parameters:
+
+1. **``init_type``** :: *``String``*
+
+   1. **``"random"``**: Generates a random to grid to start with and
+      starts the simulation, requires ``h`` and ``w``.
+   2. **``"json"``**: Reads a specified json file and starts the
+      simulation, requires ``json_path``
+
+2. **``w``** :: *``Integer``*: Positive ``Integer`` specifying the width
+   of the grid.
+3. **``h``** :: *``Integer``*: Positive ``Integer`` specifying the
+   height of the grid.
+4. **``json_path``** :: *``String``*: String specifying the path of the
+   JSON file to be used.
+5. **``debug``** :: *``Boolean``*: A boolean value specifying the mode
+   of operation, ``True``: Print the debug information after the grid on
+   each operation, ``False``: Do not print any debug information.
