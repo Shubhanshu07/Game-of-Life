@@ -14,7 +14,7 @@ Installation Instruction
 
 To run test programs
 ----------------------
-``python3 setup.py test ``
+``python3 setup.py test``
 
 To use as package in file
 -------------------
