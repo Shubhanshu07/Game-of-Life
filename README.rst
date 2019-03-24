@@ -7,9 +7,9 @@ JDE Robots.
 Installation Instruction
 ------------------------
 
-``# make virutal Environment
+``# make virutal Environment``
 
-pip3 install .``
+``pip3 install .``
 
 
 To run test programs
@@ -18,11 +18,11 @@ To run test programs
 
 To use as package in file
 -------------------
-``python3
+``python3``
 
->>from jdegol import gol
+``>>from jdegol import gol``
 
->> gol(init_type="random",h=20,w=20)``
+``>> gol(init_type="random",h=20,w=20)``
     
 
 
