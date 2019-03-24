@@ -39,19 +39,19 @@ API
 
 Parameters:
 
-1. **``init_type``** :: *``String``*
+1. **init_type** :: *String*
 
-   1. **``"random"``**: Generates a random to grid to start with and
-      starts the simulation, requires ``h`` and ``w``.
-   2. **``"json"``**: Reads a specified json file and starts the
-      simulation, requires ``json_path``
+   1. **"random"**: Generates a random to grid to start with and
+      starts the simulation, requires h and w.
+   2. **"json"**: Reads a specified json file and starts the
+      simulation, requires json_path
 
-2. **``w``** :: *``Integer``*: Positive ``Integer`` specifying the width
+2. **w** :: *Integer*: Positive Integer specifying the width
    of the grid.
-3. **``h``** :: *``Integer``*: Positive ``Integer`` specifying the
+3. **h** :: *Integer*: Positive Integer specifying the
    height of the grid.
-4. **``json_path``** :: *``String``*: String specifying the path of the
+4. **json_path** :: *String*: String specifying the path of the
    JSON file to be used.
-5. **``debug``** :: *``Boolean``*: A boolean value specifying the mode
-   of operation, ``True``: Print the debug information after the grid on
-   each operation, ``False``: Do not print any debug information.
+5. **debug** :: *Boolean*: A boolean value specifying the mode
+   of operation, True: Print the debug information after the grid on
+   each operation, False: Do not print any debug information.
