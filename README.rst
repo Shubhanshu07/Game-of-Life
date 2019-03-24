@@ -6,24 +6,24 @@ JDE Robots.
 
 Installation Instruction
 ------------------------
-```shell
-# make virutal Environment
-pip3 install .
-```
 
-To runc test
------------------------
-```shell
+``# make virutal Environment
+
+pip3 install .``
+"
+
+To run test programs
+----------------------
+``
 python3 setup.py test
-```
+``
 
 To use as package in file
 -------------------
-```shell
-python3
+``python3
 >>from jdegol import gol
->> gol(init_type="random",h=20,w=20)
-```
+>> gol(init_type="random",h=20,w=20)``
+    
 
 
 The parameters of the gol function are *init_type,json_path,h,w.*
