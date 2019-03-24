@@ -3,6 +3,7 @@ Conway's Game of Life
 
 Implementation of Conway's Game of Life for 2019 GSoC application for
 JDE Robots.
+
 Installation Instruction
 ------------------------
 ```shell
@@ -10,7 +11,7 @@ Installation Instruction
 pip3 install .
 ```
 
-To run test
+To runc test
 -----------------------
 ```shell
 python3 setup.py test
@@ -23,8 +24,11 @@ python3
 >>from jdegol import gol
 >> gol(init_type="random",h=20,w=20)
 ```
-The parameters of the gol function are <i>init_type,json_path,h,w.</i>
-1. init_type="random" to take initially random values
-2. init_type="json" json_path="" to parse the json file as an input
-3. h corresponds to the height of the grid
-4. w corresponds to the width of the grid
+
+
+The parameters of the gol function are *init_type,json_path,h,w.*
+
+- init_type="random" to take initially random values
+- init_type="json" json_path="" to parse the json file as an input
+- h corresponds to the height of the grid
+- w corresponds to the width of the grid
